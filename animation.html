@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Translate Animation</title>
+<style>
+.box {
+margin: 50px;
+width:400px;
+height:203px;
+/* background: url("/images/car2.jpg") no-repeat; */
+background-color: aqua;
+position: relative;
+background-size: cover;
+/* Chrome, Safari, Opera */
+-webkit-animation-name: moveit;
+-webkit-animation-duration: 2s;
+/* Standard syntax */
+animation-name: moveit;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveit {
+from {left: 0;}
+to {left: 50%;}
+}
+/* Standard syntax */
+@keyframes moveit {
+from {left: 0;}
+to {left: 50%;}
+}
+</style>
+</head>
+<body>
+<h1>Moving Car</h1>
+<div class="box"></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores impedit quidem
+laborum ratione assumenda consequatur officia voluptabo?</p>
+</body>
+</html>
